@@ -1,0 +1,8 @@
+{
+  "name": "rspack-compat",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter ./packages/** build"
+  },
+  "packageManager": "pnpm@8.9.0"
+}

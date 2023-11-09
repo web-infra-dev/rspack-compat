@@ -1,0 +1,1 @@
+Catalogue the compatible loaders and plugins.

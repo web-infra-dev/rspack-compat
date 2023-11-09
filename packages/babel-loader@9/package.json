@@ -1,0 +1,11 @@
+{
+  "name": "@rspack-compat/babel-loader_9",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "babel-loader": "9.1.3",
+    "@babel/preset-typescript": "^7.23.2"
+  }
+}
