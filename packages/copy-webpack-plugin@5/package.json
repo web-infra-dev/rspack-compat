@@ -1,0 +1,10 @@
+{
+  "name": "@rspack-compat/copy-webpack-plugin_5",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "copy-webpack-plugin": "^5.1.2"
+  }
+}

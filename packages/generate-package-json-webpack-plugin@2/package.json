@@ -1,0 +1,10 @@
+{
+  "name": "@rspack-compat/generate-package-json-webpack-plugin_2",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "generate-package-json-webpack-plugin": "^2.6.0"
+  }
+}

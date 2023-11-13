@@ -1,0 +1,10 @@
+{
+  "name": "@rspack-compat/webpack-bundle-analyzer_4",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "webpack-bundle-analyzer": "^4.9.1"
+  }
+}
