@@ -1,11 +1,13 @@
 name: CI
 
+on:
+  pull_request:
+    branches: [main]
+
 jobs:
   build:
     name: Build
-    defaults:
-      run:
-        shell: bash
+    runs-on: "ubuntu-latest"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -18,5 +20,7 @@ jobs:
         with:
           node-version: 18
           cache: 'pnpm'
+      - name: Install Dependencies
+        run: pnpm install
       - name: Build
         run: npm run build
