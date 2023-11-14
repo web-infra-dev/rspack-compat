@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "name": "babel-loader",
+    "version": "9",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/babel-loader@9"
+  },
+  {
+    "name": "copy-webpack-plugin",
+    "version": "5",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/copy-webpack-plugin@5"
+  },
+  {
+    "name": "fork-ts-checker-webpack-plugin",
+    "version": "8",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/fork-ts-checker-webpack-plugin@8"
+  },
+  {
+    "name": "generate-package-json-webpack-plugin",
+    "version": "2",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/generate-package-json-webpack-plugin@2"
+  },
+  {
+    "name": "html-webpack-plugin",
+    "version": "5",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/html-webpack-plugin@5"
+  },
+  {
+    "name": "webpack-bundle-analyzer",
+    "version": "4",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/webpack-bundle-analyzer@4"
+  },
+  {
+    "name": "webpack-stats-plugin",
+    "version": "1",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/webpack-stats-plugin@1"
+  }
+]
