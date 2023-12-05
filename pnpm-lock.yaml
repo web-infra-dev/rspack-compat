@@ -56,6 +56,15 @@ importers:
         specifier: ^5.5.3
         version: 5.5.3(webpack@5.89.0)
 
+  packages/license-webpack-plugin@4:
+    devDependencies:
+      '@rspack/cli':
+        specifier: 0.3.11
+        version: 0.3.11(react-refresh@0.14.0)
+      license-webpack-plugin:
+        specifier: ^4.0.2
+        version: 4.0.2(webpack@5.76.0)
+
   packages/webpack-bundle-analyzer@4:
     devDependencies:
       '@rspack/cli':
@@ -2582,6 +2591,20 @@ packages:
     dependencies:
       picocolors: 1.0.0
       shell-quote: 1.8.1
+    dev: true
+
+  /license-webpack-plugin@4.0.2(webpack@5.76.0):
+    resolution: {integrity: sha512-771TFWFD70G1wLTC4oU2Cw4qvtmNrIw+wRvBtn+okgHl7slJVi7zfNcdmqDL72BojM30VNJ2UHylr1o77U37Jw==}
+    peerDependencies:
+      webpack: '*'
+    peerDependenciesMeta:
+      webpack:
+        optional: true
+      webpack-sources:
+        optional: true
+    dependencies:
+      webpack: 5.76.0
+      webpack-sources: 3.2.3
     dev: true
 
   /lines-and-columns@1.2.4:

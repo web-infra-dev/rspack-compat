@@ -1,0 +1,13 @@
+{
+  "name": "@rspack-compat/license-webpack-plugin_4",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "license-webpack-plugin": "^4.0.2"
+  },
+  "rspack": {
+    "version": ">=0.3.11"
+  }
+}
