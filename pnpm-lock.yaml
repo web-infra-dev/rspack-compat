@@ -63,7 +63,16 @@ importers:
         version: 0.3.11(react-refresh@0.14.0)
       license-webpack-plugin:
         specifier: ^4.0.2
-        version: 4.0.2(webpack@5.76.0)
+        version: 4.0.2(webpack@5.89.0)
+
+  packages/rspack-manifest-plugin@5:
+    devDependencies:
+      '@rspack/cli':
+        specifier: 0.3.11
+        version: 0.3.11(react-refresh@0.14.0)
+      rspack-manifest-plugin:
+        specifier: 5.0.0-alpha0
+        version: 5.0.0-alpha0(webpack@5.89.0)
 
   packages/webpack-bundle-analyzer@4:
     devDependencies:
@@ -2593,7 +2602,7 @@ packages:
       shell-quote: 1.8.1
     dev: true
 
-  /license-webpack-plugin@4.0.2(webpack@5.76.0):
+  /license-webpack-plugin@4.0.2(webpack@5.89.0):
     resolution: {integrity: sha512-771TFWFD70G1wLTC4oU2Cw4qvtmNrIw+wRvBtn+okgHl7slJVi7zfNcdmqDL72BojM30VNJ2UHylr1o77U37Jw==}
     peerDependencies:
       webpack: '*'
@@ -2603,7 +2612,7 @@ packages:
       webpack-sources:
         optional: true
     dependencies:
-      webpack: 5.76.0
+      webpack: 5.89.0
       webpack-sources: 3.2.3
     dev: true
 
@@ -3302,6 +3311,17 @@ packages:
       glob: 7.2.3
     dev: true
 
+  /rspack-manifest-plugin@5.0.0-alpha0(webpack@5.89.0):
+    resolution: {integrity: sha512-a84H6P/lK0x3kb0I8Qdiwxrnjt1oNW0j+7kwPMWcODJu8eYFBrTXa1t+14n18Jvg9RKIR6llCH16mYxf2d0s8A==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      webpack: ^5.75.0
+    dependencies:
+      tapable: 2.2.1
+      webpack: 5.89.0
+      webpack-sources: 2.3.1
+    dev: true
+
   /run-queue@1.0.3:
     resolution: {integrity: sha512-ntymy489o0/QQplUDnpYAYUsO50K9SBrIVaKCWDOJzYJts0f9WH9RFJkyagebkw5+y1oi00R7ynNW/d12GBumg==}
     dependencies:
@@ -3513,6 +3533,10 @@ packages:
       faye-websocket: 0.11.4
       uuid: 8.3.2
       websocket-driver: 0.7.4
+    dev: true
+
+  /source-list-map@2.0.1:
+    resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
     dev: true
 
   /source-map-support@0.5.21:
@@ -4013,6 +4037,14 @@ packages:
     dependencies:
       ansi-colors: 3.2.4
       uuid: 3.4.0
+    dev: true
+
+  /webpack-sources@2.3.1:
+    resolution: {integrity: sha512-y9EI9AO42JjEcrTJFOYmVywVZdKVUfOvDUPsJea5GIr1JOEGFVqwlY2K098fFoIjOkDzHn2AjRvM8dsBZu+gCA==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      source-list-map: 2.0.1
+      source-map: 0.6.1
     dev: true
 
   /webpack-sources@3.2.3:
