@@ -30,6 +30,12 @@
     "path": "packages/html-webpack-plugin@5"
   },
   {
+    "name": "license-webpack-plugin",
+    "version": "4",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/license-webpack-plugin@4"
+  },
+  {
     "name": "webpack-bundle-analyzer",
     "version": "4",
     "rspackVersion": ">=0.3.11",
