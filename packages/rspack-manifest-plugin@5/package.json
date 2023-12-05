@@ -1,0 +1,13 @@
+{
+  "name": "@rspack-compat/rspack-manifest-plugin_4",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "rspack-manifest-plugin": "5.0.0-alpha0"
+  },
+  "rspack": {
+    "version": ">=0.3.11"
+  }
+}
