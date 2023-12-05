@@ -36,6 +36,12 @@
     "path": "packages/license-webpack-plugin@4"
   },
   {
+    "name": "rspack-manifest-plugin",
+    "version": "5",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/rspack-manifest-plugin@5"
+  },
+  {
     "name": "webpack-bundle-analyzer",
     "version": "4",
     "rspackVersion": ">=0.3.11",
