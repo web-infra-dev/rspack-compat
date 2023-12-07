@@ -1,0 +1,13 @@
+{
+  "name": "@rspack-compat/polyfill-webpack-plugin",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.3.11",
+    "node-polyfill-webpack-plugin": "3.0.0"
+  },
+  "rspack": {
+    "version": ">=0.3.11"
+  }
+}
