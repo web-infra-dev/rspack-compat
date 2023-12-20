@@ -1,5 +1,5 @@
 {
-  "name": "@rspack-compat/polyfill-webpack-plugin",
+  "name": "@rspack-compat/polyfill-webpack-plugin_3",
   "scripts": {
     "build": "rspack build"
   },
