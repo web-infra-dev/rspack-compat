@@ -2,7 +2,8 @@
   "name": "rspack-compat",
   "private": true,
   "scripts": {
-    "build": "pnpm --filter './packages/**' build"
+    "build": "pnpm --filter './packages/**' build",
+    "check": "node ./scripts/check.js"
   },
   "packageManager": "pnpm@8.9.0"
 }
