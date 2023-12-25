@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs/promises');
 const fsSync = require('fs');
-const assert = require('assert');
-const { spawn } = require('child_process')
+const { spawn } = require('child_process');
+const { PACKAGE_DIR, ROOT_DIR, readCompat } = require('./utils');
 
 async function runCommand(
   command,
@@ -30,51 +30,15 @@ async function runCommand(
     throw new Error(`${command} ${args.join(" ")} failed with ${exitCode}`);
 }
 
-function ok(value) {
-  assert(value)
-}
-
-
-const root = path.resolve(__dirname, '..');
 const dataDir = path.resolve(root, '.data');
-
-/**
- * @param {string} name 
- * @returns {[string, string]}
- */
-function splitPackageName(name) {
-  return name.split('@')
-}
-
-/**
- * @param {string} dir 
- */
-async function readCompat(dir) {
-  const list = await fs.readdir(dir);
-  return list.map(item => {
-    const [name, version] = splitPackageName(item);
-    const abs = path.resolve(dir, item, 'package.json');
-    const info = require(abs).rspack;
-    ok(typeof info.version === 'string')
-    ok(typeof name === 'string')
-    ok(typeof version === 'string')
-    return {
-      name,
-      version,
-      rspackVersion: info.version,
-      path: path.relative(root, path.resolve(dir, item))
-    }
-  })
-}
 
 /**
  * @param {string[]} args 
  */
 async function run(args) {
-  const dir = path.resolve(root, 'packages');
-  const jsonStr = await readCompat(dir).then((list) => JSON.stringify(list, undefined, 2));
+  const jsonStr = await readCompat(PACKAGE_DIR).then((list) => JSON.stringify(list, undefined, 2));
   const name = 'rspack-compat.json'
-  const abs = path.resolve(root, name)
+  const abs = path.resolve(ROOT_DIR, name)
   // write file to root
   await fs.writeFile(abs, jsonStr)
 
