@@ -3,6 +3,7 @@ const fs = require('fs/promises');
 const fsSync = require('fs');
 const { spawn } = require('child_process');
 const { PACKAGE_DIR, ROOT_DIR, readCompat } = require('./utils');
+const assert = require('assert');
 
 async function runCommand(
   command,
@@ -30,7 +31,7 @@ async function runCommand(
     throw new Error(`${command} ${args.join(" ")} failed with ${exitCode}`);
 }
 
-const dataDir = path.resolve(root, '.data');
+const dataDir = path.resolve(ROOT_DIR, '.data');
 
 /**
  * @param {string[]} args 
@@ -43,9 +44,9 @@ async function run(args) {
   await fs.writeFile(abs, jsonStr)
 
   const token = args[0];
-  ok(typeof token === 'string');
+  assert(typeof token === 'string');
   const GITHUB_ACTOR = process.env.GITHUB_ACTOR;
-  ok(typeof GITHUB_ACTOR === 'string');
+  assert(typeof GITHUB_ACTOR === 'string');
   const repoUrl = `https://${GITHUB_ACTOR}:${token}@github.com/web-infra-dev/rspack-compat.git`;
 
   if (!fsSync.existsSync(dataDir)) {
