@@ -48,6 +48,12 @@
     "path": "packages/rspack-manifest-plugin@5"
   },
   {
+    "name": "unplugin-auto-import",
+    "version": "0.17.3",
+    "rspackVersion": ">=0.4.1",
+    "path": "packages/unplugin-auto-import@0.17.3"
+  },
+  {
     "name": "webpack-bundle-analyzer",
     "version": "4",
     "rspackVersion": ">=0.3.11",
