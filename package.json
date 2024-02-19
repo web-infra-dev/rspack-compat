@@ -5,5 +5,8 @@
     "build": "pnpm --filter './packages/**' build",
     "check": "node ./scripts/check.js"
   },
-  "packageManager": "pnpm@8.9.0"
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "pnpm": "8.9.0"
+  }
 }

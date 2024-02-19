@@ -18,7 +18,7 @@ module.exports = defineConfig({
   },
   experiments: {
     rspackFuture: {
-      disableTransformByDefault:true
+      disableTransformByDefault: true
     }
   }
 });;

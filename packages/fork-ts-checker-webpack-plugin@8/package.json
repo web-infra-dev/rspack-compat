@@ -5,7 +5,8 @@
   },
   "devDependencies": {
     "@rspack/cli": "0.3.11",
-    "fork-ts-checker-webpack-plugin": "^8.0.0"
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "typescript": "^5.3.3"
   },
   "rspack": {
     "version": ">=0.3.11"

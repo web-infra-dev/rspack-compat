@@ -1,0 +1,19 @@
+{
+  "name": "@rspack-compat/rspack-unplugin_1.6",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "dependencies": {
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@rspack/cli": "0.4.1",
+    "@rspack/core": "0.4.1",
+    "unplugin-auto-import": "^0.17.3",
+    "html-webpack-plugin": "5.6.0",
+    "vue-loader": "^17.4.2"
+  },
+  "rspack": {
+    "version": ">=0.4.1"
+  }
+}
