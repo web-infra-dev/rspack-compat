@@ -1,7 +1,8 @@
 {
   "name": "@rspack-compat/rspack-manifest-plugin_4",
   "scripts": {
-    "build": "rspack build"
+    "build": "rspack build",
+    "test": "node ./test.js"
   },
   "devDependencies": {
     "@rspack/cli": "0.3.11",
