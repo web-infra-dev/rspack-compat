@@ -1,0 +1,14 @@
+{
+  "name": "@rspack-compat/copy-webpack-plugin_5",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "latest",
+    "@rspack/core": "latest",
+    "case-sensitive-paths-webpack-plugin": "2.4.0"
+  },
+  "rspack": {
+    "version": ">=0.3.11"
+  }
+}
