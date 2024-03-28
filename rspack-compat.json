@@ -6,6 +6,12 @@
     "path": "packages/babel-loader@9"
   },
   {
+    "name": "case-sensitive-paths-webpack-plugin",
+    "version": "2",
+    "rspackVersion": ">=0.3.11",
+    "path": "packages/case-sensitive-paths-webpack-plugin@2"
+  },
+  {
     "name": "copy-webpack-plugin",
     "version": "5",
     "rspackVersion": ">=0.3.11",
