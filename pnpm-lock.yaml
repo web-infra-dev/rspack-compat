@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  packages/@vanilla-extract/webpack-plugin@2:
+  packages/@vanilla-extract:
     devDependencies:
       '@rspack/cli':
         specifier: 1.0.0-alpha.0
@@ -79,8 +79,6 @@ importers:
       generate-package-json-webpack-plugin:
         specifier: ^2.6.0
         version: 2.6.0
-
-  packages/generate-package-json-webpack-plugin@2/dist: {}
 
   packages/html-webpack-plugin@5:
     devDependencies:
@@ -1949,7 +1947,7 @@ packages:
       '@vanilla-extract/integration': 7.1.7
       debug: 4.3.4
       loader-utils: 2.0.4
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       webpack: 5.76.0
     transitivePeerDependencies:
       - '@types/node'
@@ -5927,7 +5925,7 @@ packages:
       cac: 6.7.14
       debug: 4.3.4
       pathe: 1.1.2
-      picocolors: 1.0.0
+      picocolors: 1.0.1
       vite: 5.3.2
     transitivePeerDependencies:
       - '@types/node'
