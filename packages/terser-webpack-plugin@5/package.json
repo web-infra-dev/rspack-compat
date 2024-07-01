@@ -1,0 +1,14 @@
+{
+  "name": "@rspack-compat/terser-webpack-plugin_5",
+  "scripts": {
+    "build": "rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "1.0.0-alpha.0",
+    "@rspack/core": "1.0.0-alpha.0",
+    "terser-webpack-plugin": "5.3.10"
+  },
+  "rspack": {
+    "version": "1.0.0-alpha.0"
+  }
+}
