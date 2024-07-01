@@ -54,6 +54,12 @@
     "path": "packages/rspack-manifest-plugin@5"
   },
   {
+    "name": "terser-webpack-plugin",
+    "version": "5",
+    "rspackVersion": "1.0.0-alpha.0",
+    "path": "packages/terser-webpack-plugin@5"
+  },
+  {
     "name": "unplugin-auto-import",
     "version": "0.17.3",
     "rspackVersion": ">=0.4.1",
