@@ -1,0 +1,16 @@
+{
+  "name": "@rspack-compat/vanilla-extract",
+  "scripts": {
+    "build": "rspack build",
+    "dev": "rspack dev"
+  },
+  "devDependencies": {
+    "@vanilla-extract/css": "^1.15.1",
+    "@rspack/cli": "1.0.0-alpha.0",
+    "@rspack/core": "1.0.0-alpha.0",
+    "@vanilla-extract/webpack-plugin": "^2.3.8"
+  },
+  "rspack": {
+    "version": "1.0.0-alpha.0"
+  }
+}
