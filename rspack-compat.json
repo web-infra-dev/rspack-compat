@@ -1,5 +1,11 @@
 [
   {
+    "name": "",
+    "version": "vanilla-extract",
+    "rspackVersion": "1.0.0-alpha.0",
+    "path": "packages/@vanilla-extract"
+  },
+  {
     "name": "babel-loader",
     "version": "9",
     "rspackVersion": ">=0.3.11",
