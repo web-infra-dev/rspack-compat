@@ -9,12 +9,15 @@ module.exports = defineConfig({
       imports: ["vue"],
     }),
     new VueLoaderPlugin(),
-    // the aims of `HtmlWebpackPlugin` is ensure 
+    // the aims of `HtmlWebpackPlugin` is ensure
     // `unplugin-auto-import` will not includes `index.html`
     new HtmlWebpackPlugin({
       template: "./index.html",
     }),
   ],
+  experiments: {
+    css: true,
+  },
   module: {
     rules: [
       {
@@ -23,7 +26,7 @@ module.exports = defineConfig({
         options: {
           experimentalInlineMatchResource: true,
         },
-      }
+      },
     ],
   },
 });
